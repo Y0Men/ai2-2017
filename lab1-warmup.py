@@ -9,7 +9,7 @@ def board():
 def tictactoe():
     a = 'H'.join(['  |  |  ']*3) + '\n'
     b ='H'.join(['--+--+--']*3) + '\n'
-    c = pion.join([poziom]*3)
+    c = a.join([b]*3)
     separator = '+'.join(['='*8]*3) + '\n'
     print(c,c,c,sep=separator)
 
@@ -37,3 +37,9 @@ def collatz(number):
 def ftoc(temp):
     celsius = (temp - 32) * (5/9)
     print(celsius)
+    
+board();
+tictactoe()
+multiples()
+collatz(44)
+ftoc(66)
